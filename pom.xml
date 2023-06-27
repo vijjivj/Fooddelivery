@@ -6,16 +6,15 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.7.12</version>
-		<relativePath /> <!-- lookup parent from repository -->
+		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.member</groupId>
-	<artifactId>KanbanBoardApplication</artifactId>
+	<groupId>com.demo.main</groupId>
+	<artifactId>FoodDelivery</artifactId>
 	<version>1</version>
-	<name>KanbanBoardApplication</name>
+	<name>FoodDelivery</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
-		<java.version>11</java.version>
-		<sonar.login>squ_8672a4e934f57606dff33b3e3b9b5bb2f8ae6d79</sonar.login>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -26,6 +25,7 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
@@ -53,6 +53,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -67,34 +68,10 @@
 					</excludes>
 				</configuration>
 			</plugin>
-			<plugin>
-<groupId>org.sonarsource.scanner.maven</groupId>
-<artifactId>sonar-maven-plugin</artifactId>
-<version>3.9.1.2184</version>
-</plugin>
-<plugin>
-<groupId>org.jacoco</groupId>
-<artifactId>jacoco-maven-plugin</artifactId>
-<version>0.8.7</version>
-<executions>
-<execution>
-<id>prepare-agent</id>
-<goals>
-<goal>prepare-agent</goal>
-</goals>
-</execution>
-<execution>
-<id>report</id>
-<goals>
-<goal>report</goal>
-</goals>
-</execution>
-</executions>
-</plugin>
 		</plugins>
 	</build>
-</project>
 
+</project>
 
 
 
